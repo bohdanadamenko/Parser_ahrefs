@@ -20,8 +20,8 @@ Please use responsibly and only for domains you are authorized to check.
 
 ## Requirements
 - Python 3.9+
-- Google Chrome installed
-- ChromeDriver (auto-installed by `webdriver-manager`)
+- AntiCaptcha API key
+- Telegram bot token and chat ID (optional)
 
 ---
 
@@ -30,3 +30,31 @@ Please use responsibly and only for domains you are authorized to check.
 git clone https://github.com/yourusername/ahrefs-traffic-checker.git
 cd ahrefs-traffic-checker
 pip install -r requirements.txt
+```
+
+## Environment Variables
+Create a `.env` file or set the following environment variables:
+
+```bash
+# Required
+export ANTICAPTCHA_API_KEY="your_anticaptcha_api_key_here"
+
+# Optional (for Telegram notifications)
+export TELEGRAM_TOKEN="your_telegram_bot_token"
+export TELEGRAM_CHAT_ID="your_telegram_chat_id"
+```
+
+## Usage
+```bash
+# Basic usage with default domain (dou.ua)
+python ahrefs_parser.py
+
+# Check specific domain
+python ahrefs_parser.py --domain example.com
+
+# Verbose logging
+python ahrefs_parser.py --domain google.com --verbose
+
+# Show help
+python ahrefs_parser.py --help
+```
