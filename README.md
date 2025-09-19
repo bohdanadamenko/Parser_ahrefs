@@ -46,11 +46,13 @@ export TELEGRAM_CHAT_ID="your-telegram-chat-id"
 
 ## Usage
 Run for a single domain:
+
 ```bash
 python script.py ahrefs.com
 ```
 
 ## Example Output
-``bash
+
+```bash
 📊 Organic traffic (ahrefs.com): 123456
 ```
