@@ -30,3 +30,27 @@ Please use responsibly and only for domains you are authorized to check.
 git clone https://github.com/yourusername/ahrefs-traffic-checker.git
 cd ahrefs-traffic-checker
 pip install -r requirements.txt
+```
+---
+
+## Environment Variables
+Set your API keys and tokens as environment variables:
+
+```bash
+export ANTICAPTCHA_API_KEY="your-anticaptcha-key"
+export TELEGRAM_TOKEN="your-telegram-bot-token"
+export TELEGRAM_CHAT_ID="your-telegram-chat-id"
+```
+
+---
+
+## Usage
+Run for a single domain:
+```bash
+python script.py ahrefs.com
+```
+
+## Example Output
+``bash
+📊 Organic traffic (ahrefs.com): 123456
+```
